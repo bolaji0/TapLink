@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NFC Google Review Card — Get More Google Reviews With One Tap | Nigeria</title>
+<meta name="description" content="Give happy customers one tap to leave your business a Google review. NFC + QR review card for Nigerian restaurants, salons, hotels, barbers and service businesses. Order on WhatsApp.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="product">
+<meta property="og:title" content="NFC Google Review Card — One Tap. One Review.">
+<meta property="og:description" content="Turn happy customers into 5-star Google reviews with one tap. Made for Nigerian businesses. Order on WhatsApp.">
+<meta property="og:image" content="assets/product-hero.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- ============================================
+     META PIXEL — paste your Meta Pixel base code here
+     <script>
+       !function(f,b,e,v,n,t,s){...}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+       fbq('init', 'YOUR_PIXEL_ID');
+       fbq('track', 'PageView');
+     </script>
+     ============================================ -->
+
+<!-- ============================================
+     GOOGLE ANALYTICS — paste your GA4 snippet here
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+     <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'G-XXXXXXX');
+     </script>
+     ============================================ -->
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <span class="brand-ripple"></span>
+      </span>
+      <span class="brand-name">Tap<span class="brand-accent">Review</span></span>
+    </a>
+    <a href="#order" class="btn btn-ghost header-cta" data-track="header_whatsapp_click" data-whatsapp>
+      Chat on WhatsApp
+    </a>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ 1. HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">For Nigerian businesses that live on reviews</p>
+      <h1>Turn happy customers into more customers — with one tap.</h1>
+      <p class="hero-sub">
+        Give your business a faster route from a satisfied customer to a 5-star Google review.
+        A stronger review profile helps more people find and trust you when they search for a
+        business like yours nearby.
+      </p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" data-scroll="#offer" data-track="hero_primary_cta">Get My Review Card</button>
+        <a class="btn btn-outline" data-whatsapp data-track="hero_whatsapp_click" href="#">Chat With Us On WhatsApp</a>
+      </div>
+      <ul class="hero-microtrust">
+        <li>No app for your customers to install</li>
+        <li>Works with tap <em>or</em> QR scan</li>
+        <li>Ships across Nigeria</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="tap-demo" id="tapDemo">
+        <div class="tap-demo-phone">
+          <span class="tap-demo-phone-glow"></span>
+        </div>
+        <div class="tap-demo-ripple r1"></div>
+        <div class="tap-demo-ripple r2"></div>
+        <div class="tap-demo-card">
+          <!-- REPLACE: swap this mock card for a real product photo — assets/product-front.png -->
+          <div class="mock-card">
+            <span class="mock-card-label">Review us on</span>
+            <span class="mock-card-google">Google</span>
+            <span class="mock-card-stars" id="heroStars">
+              <i style="--c:#4285F4"></i><i style="--c:#EA4335"></i><i style="--c:#FBBC05"></i><i style="--c:#34A853"></i><i style="--c:#4285F4"></i>
+            </span>
+            <span class="mock-card-qr" aria-hidden="true">
+              <img src="./files/qr-code.svg" alt="">
+            </span>
+            <span class="mock-card-tap">Tap <span class="dot">•</span> or Scan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. TRUST STRIP ============ -->
+<section class="trust-strip">
+  <div class="wrap trust-strip-inner">
+    <span>NFC Tap-to-Review</span>
+    <span>QR Code Backup</span>
+    <span>Works With Most Smartphones</span>
+    <span>Ready In Minutes</span>
+    <span>Order Via WhatsApp</span>
+  </div>
+</section>
+
+<!-- ============ 3. PROBLEM ============ -->
+<section class="section" id="problem">
+  <div class="wrap narrow">
+    <p class="section-kicker">The problem</p>
+    <h2>Your unhappiest customers already left a review. Your happiest ones haven't.</h2>
+    <p class="section-lede">An unhappy customer is motivated to complain right away. A happy customer means to say something nice — then gets busy and forgets. That gap is where most of your best reviews are quietly lost.</p>
+
+    <div class="problem-grid">
+      <div class="problem-card">
+        <p class="problem-line">"Please leave us a review" — said out loud, then forgotten by the time the customer gets home.</p>
+      </div>
+      <div class="problem-card">
+        <p class="problem-line">Leaving a review the normal way means opening a browser, searching your business name, finding the right listing, then scrolling to "Write a review" — real friction between meaning to and actually doing it.</p>
+      </div>
+      <div class="problem-card">
+        <p class="problem-line">A review link sent by WhatsApp, buried under the day's other messages within minutes.</p>
+      </div>
+      <div class="problem-card">
+        <p class="problem-line">Every extra step between "happy customer" and "posted review" is a chance for the review to never happen.</p>
+      </div>
+    </div>
+
+    <p class="problem-resolve">A review card at your counter turns that whole search into one tap — asked at the exact moment they're happiest, right after the haircut, the meal, or the service.</p>
+  </div>
+</section>
+
+<!-- ============ 4. HOW IT WORKS ============ -->
+<section class="section section-alt" id="how">
+  <div class="wrap">
+    <p class="section-kicker">How it works</p>
+    <h2>Three steps. No app. No searching.</h2>
+
+    <div class="steps">
+      <div class="step">
+        <span class="step-num">01</span>
+        <h3>Customer taps</h3>
+        <p>The customer holds their phone near the card for a second — the same motion as a contactless card payment.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">02</span>
+        <h3>Review page opens</h3>
+        <p>Their phone opens straight to your Google review page. No searching for your business name.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">03</span>
+        <h3>Customer leaves a review</h3>
+        <p>They write a few words and post it — while the experience is still fresh.</p>
+      </div>
+    </div>
+
+    <div class="qr-note">
+      <strong>No NFC on their phone? No problem.</strong>
+      <span>Every card also carries a QR code that opens the same review page when scanned.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. BENEFITS ============ -->
+<section class="section" id="benefits">
+  <div class="wrap">
+    <p class="section-kicker">What you get</p>
+    <h2>Built to make one thing easier — asking for reviews.</h2>
+
+    <div class="benefits-grid">
+      <div class="benefit"><h3>One tap</h3><p>Replace the awkward verbal ask with a card that does the asking for you.</p></div>
+      <div class="benefit"><h3>Professional appearance</h3><p>A physical review tool that sits at your counter and looks like part of your business, not an afterthought.</p></div>
+      <div class="benefit"><h3>QR backup, always on</h3><p>Customers without NFC can scan instead — nobody is left out.</p></div>
+      <div class="benefit"><h3>Fewer steps, more reviews</h3><p>Every step you remove between "happy" and "posted" is a step that can no longer lose you a review.</p></div>
+      <div class="benefit"><h3>Reusable, not one-time</h3><p>Keep it at reception, the checkout counter, or the till — it works for every customer who walks past.</p></div>
+      <div class="benefit"><h3>Set up once</h3><p>Point it at your Google review link once — it's ready for every customer after that.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. WHO SHOULD USE IT ============ -->
+<section class="section section-alt" id="who">
+  <div class="wrap">
+    <p class="section-kicker">Who it's for</p>
+    <h2>Any business where a Google review builds trust.</h2>
+
+    <div class="usecase-grid">
+      <div class="usecase">🍽 <span>Restaurants</span></div>
+      <div class="usecase">🏨 <span>Hotels &amp; Shortlets</span></div>
+      <div class="usecase">💈 <span>Barbers</span></div>
+      <div class="usecase">💇 <span>Salons &amp; Spas</span></div>
+      <div class="usecase">🏠 <span>Real Estate</span></div>
+      <div class="usecase">🚗 <span>Auto Workshops</span></div>
+      <div class="usecase">🛍 <span>Retail Stores</span></div>
+      <div class="usecase">🩺 <span>Clinics</span></div>
+      <div class="usecase">💼 <span>Service Businesses</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. VALUE / ROI ============ -->
+<section class="section" id="value">
+  <div class="wrap narrow">
+    <p class="section-kicker">Why it matters</p>
+    <h2>You've already earned the happy customer. This just makes sure the review happens.</h2>
+    <p class="section-lede">
+      You spend money and effort getting each customer through the door. When they leave happy, that
+      moment is worth capturing — because the review they leave becomes proof for the next customer
+      who's deciding between you and a competitor.
+    </p>
+
+    <div class="value-flow">
+      <div class="value-step"><span>Happy customer</span></div>
+      <div class="value-arrow" aria-hidden="true">↓</div>
+      <div class="value-step"><span>Easy way to ask, right at the counter</span></div>
+      <div class="value-arrow" aria-hidden="true">↓</div>
+      <div class="value-step"><span>More reviews actually get posted</span></div>
+      <div class="value-arrow" aria-hidden="true">↓</div>
+      <div class="value-step value-step-strong"><span>Stronger social proof for the next customer</span></div>
+    </div>
+
+    <p class="value-caveat">We don't guarantee a specific number of reviews or a Google ranking outcome — how customers respond is up to them. What the card does is remove the friction that stops most requests from ever becoming a review.</p>
+  </div>
+</section>
+
+<!-- ============ 8. PRODUCT SHOWCASE ============ -->
+<section class="section section-alt" id="product">
+  <div class="wrap showcase-inner">
+    <div class="showcase-copy">
+      <p class="section-kicker">The card</p>
+      <h2>A standee card for your counter, reception desk, or till.</h2>
+      <ul class="showcase-list">
+        <li><strong>Front —</strong> your review destination, branded with your business in mind.</li>
+        <li><strong>NFC chip —</strong> built into the card, tap-ready out of the box.</li>
+        <li><strong>QR code —</strong> printed on the same card as a backup for every phone.</li>
+        <li><strong>Stand —</strong> free-standing, no extra mounting needed.</li>
+      </ul>
+      <p class="showcase-note">This is a third-party NFC review card designed to link to your Google Business review page — it is not an official Google product.</p>
+    </div>
+    <div class="showcase-visual">
+      <!-- REPLACE: swap for real product photography — assets/product-showcase.png -->
+      <div class="mock-card mock-card-large">
+        <span class="mock-card-label">Review us on</span>
+        <span class="mock-card-google">Google</span>
+        <span class="mock-card-stars">
+          <i style="--c:#4285F4"></i><i style="--c:#EA4335"></i><i style="--c:#FBBC05"></i><i style="--c:#34A853"></i><i style="--c:#4285F4"></i>
+        </span>
+        <span class="mock-card-qr" aria-hidden="true">
+          <svg viewBox="0 0 60 60" width="100%" height="100%"><rect width="60" height="60" fill="#fff"/><g fill="#10241C"><rect x="4" y="4" width="14" height="14"/><rect x="42" y="4" width="14" height="14"/><rect x="4" y="42" width="14" height="14"/><rect x="8" y="8" width="6" height="6" fill="#fff"/><rect x="46" y="8" width="6" height="6" fill="#fff"/><rect x="8" y="46" width="6" height="6" fill="#fff"/><rect x="22" y="4" width="4" height="4"/><rect x="30" y="4" width="4" height="4"/><rect x="22" y="12" width="4" height="4"/><rect x="36" y="12" width="4" height="4"/><rect x="22" y="20" width="4" height="4"/><rect x="30" y="20" width="4" height="8"/><rect x="4" y="22" width="4" height="4"/><rect x="12" y="22" width="4" height="4"/><rect x="20" y="26" width="4" height="4"/><rect x="28" y="28" width="8" height="4"/><rect x="42" y="24" width="4" height="10"/><rect x="50" y="22" width="4" height="4"/><rect x="22" y="36" width="4" height="4"/><rect x="30" y="36" width="4" height="4"/><rect x="38" y="36" width="4" height="4"/><rect x="46" y="34" width="4" height="10"/><rect x="22" y="44" width="10" height="4"/><rect x="36" y="46" width="4" height="4"/><rect x="44" y="46" width="12" height="4"/></g></svg>
+        </span>
+        <span class="mock-card-tap">Tap <span class="dot">•</span> or Scan</span>
+        <span class="mock-card-nfc" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#10241C" stroke-width="1.6"><path d="M6 9a8 8 0 0 1 12 0"/><path d="M8.5 11.5a4.5 4.5 0 0 1 7 0"/><circle cx="12" cy="14" r="1.4" fill="#10241C" stroke="none"/></svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8b. ANALYTICS / SOFTWARE DIFFERENTIATOR ============ -->
+<section class="section section-dark" id="connected">
+  <div class="wrap narrow">
+    <p class="section-kicker section-kicker-dark">Behind the card</p>
+    <h2 class="dark-heading">Your stand is connected — even though the card looks simple.</h2>
+    <p class="section-lede dark-lede">Every card we ship talks to a routing system behind the scenes. That's what lets us update your destination without sending a new card, and what turns tap activity into something you can see instead of guess at.</p>
+
+    <div class="dashboard-mock" aria-hidden="true">
+      <div class="dashboard-mock-head">
+        <span class="dashboard-mock-dot"></span>
+        <span>Example dashboard</span>
+      </div>
+      <div class="dashboard-mock-grid">
+        <div class="dashboard-stat">
+          <span class="dashboard-stat-label">Total taps</span>
+          <span class="dashboard-stat-value">1,284</span>
+        </div>
+        <div class="dashboard-stat">
+          <span class="dashboard-stat-label">Today</span>
+          <span class="dashboard-stat-value">24</span>
+        </div>
+        <div class="dashboard-stat">
+          <span class="dashboard-stat-label">This week</span>
+          <span class="dashboard-stat-value">143</span>
+        </div>
+        <div class="dashboard-stat">
+          <span class="dashboard-stat-label">This month</span>
+          <span class="dashboard-stat-value">486</span>
+        </div>
+        <div class="dashboard-stat">
+          <span class="dashboard-stat-label">Est. unique visitors</span>
+          <span class="dashboard-stat-value">917</span>
+        </div>
+        <div class="dashboard-stat">
+          <span class="dashboard-stat-label">Repeat taps</span>
+          <span class="dashboard-stat-value">367</span>
+        </div>
+      </div>
+      <div class="dashboard-mock-foot">Last activity: Today · 10:42 AM</div>
+    </div>
+    <p class="dashboard-mock-caption">Illustrative dashboard — figures shown are example data, not a live feed of your business.</p>
+  </div>
+</section>
+
+<!-- ============ 8c. WHY THIS IS DIFFERENT ============ -->
+<section class="section section-dark section-dark-alt" id="different">
+  <div class="wrap narrow">
+    <p class="section-kicker section-kicker-dark">Why this is different</p>
+    <h2 class="dark-heading">It's not just an NFC card.</h2>
+    <p class="section-lede dark-lede">The card on your counter is only the visible part. Everything underneath is what makes it worth more than a piece of printed plastic.</p>
+
+    <div class="stack-list">
+      <div class="stack-item">
+        <span class="stack-num">01</span>
+        <div>
+          <h3 class="dark-heading">Hardware</h3>
+          <p class="dark-body">An NFC chip and a printed QR code, built into one card — no app, no setup, on either side.</p>
+        </div>
+      </div>
+      <div class="stack-item">
+        <span class="stack-num">02</span>
+        <div>
+          <h3 class="dark-heading">Dynamic routing</h3>
+          <p class="dark-body">Your destination lives on our servers, not hardcoded onto the chip. Rebrand, move, or change your Google listing, and we repoint the card from our side — it doesn't become useless.</p>
+        </div>
+      </div>
+      <div class="stack-item">
+        <span class="stack-num">03</span>
+        <div>
+          <h3 class="dark-heading">Analytics</h3>
+          <p class="dark-body">Every tap is recorded, so engagement is something you can measure, not something you have to guess at.</p>
+        </div>
+      </div>
+      <div class="stack-item">
+        <span class="stack-num">04</span>
+        <div>
+          <h3 class="dark-heading">Management</h3>
+          <p class="dark-body">Changes happen on our side. You never need to reprogram anything or wait for a replacement card to arrive.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. OFFER / PRICING ============ -->
+<section class="section" id="offer">
+  <div class="wrap narrow">
+    <p class="section-kicker">Pricing</p>
+    <h2>Choose how many cards your business needs.</h2>
+
+    <div class="packages" id="packages" role="group" aria-label="Choose a package"></div>
+
+    <div class="order-summary">
+      <div class="order-summary-row">
+        <span>Product</span>
+        <span id="summaryProduct">—</span>
+      </div>
+      <div class="order-summary-row">
+        <span>Quantity</span>
+        <span id="summaryQty">—</span>
+      </div>
+      <div class="order-summary-row order-summary-total">
+        <span>Total</span>
+        <span id="summaryTotal">—</span>
+      </div>
+      <p class="order-summary-savings" id="summarySavings"></p>
+    </div>
+
+    <button class="btn btn-primary btn-wide" data-scroll="#order" data-track="offer_continue_cta">Continue To Order Details</button>
+  </div>
+</section>
+
+<!-- ============ 10. ORDER FORM ============ -->
+<section class="section section-alt" id="order">
+  <div class="wrap narrow">
+    <p class="section-kicker">Order details</p>
+    <h2>A few details, then we'll finish this on WhatsApp.</h2>
+
+    <form id="orderForm" novalidate>
+      <div class="field">
+        <label for="fullName">Full name</label>
+        <input type="text" id="fullName" name="fullName" autocomplete="name" required>
+        <span class="field-error" data-error-for="fullName"></span>
+      </div>
+
+      <div class="field">
+        <label for="businessName">Business name</label>
+        <input type="text" id="businessName" name="businessName" autocomplete="organization" required>
+        <span class="field-error" data-error-for="businessName"></span>
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" inputmode="tel" placeholder="080X XXX XXXX" autocomplete="tel" required>
+        <span class="field-error" data-error-for="phone"></span>
+      </div>
+
+      <div class="field">
+        <label for="businessType">Business type</label>
+        <select id="businessType" name="businessType" required>
+          <option value="" disabled selected>Select your business type</option>
+          <option>Restaurant</option>
+          <option>Hotel / Shortlet</option>
+          <option>Barber</option>
+          <option>Salon / Spa</option>
+          <option>Real Estate</option>
+          <option>Auto Workshop</option>
+          <option>Retail Store</option>
+          <option>Clinic</option>
+          <option>Fashion</option>
+          <option>Event Business</option>
+          <option>Cleaning Business</option>
+          <option>Other Service Business</option>
+        </select>
+        <span class="field-error" data-error-for="businessType"></span>
+      </div>
+
+      <div class="field">
+        <label for="quantity">Number of cards</label>
+        <select id="quantity" name="quantity" required></select>
+        <span class="field-error" data-error-for="quantity"></span>
+      </div>
+
+      <div class="field">
+        <label for="reviewLink">Your Google Business / review link</label>
+        <input type="url" id="reviewLink" name="reviewLink" placeholder="https://g.page/r/..." autocomplete="off" required>
+        <span class="field-hint">This is the page your customers will land on after they tap or scan.</span>
+        <span class="field-error" data-error-for="reviewLink"></span>
+      </div>
+
+      <div class="field">
+        <label for="notes">Additional notes <span class="optional">(optional)</span></label>
+        <textarea id="notes" name="notes" rows="3" placeholder="Anything else we should know?"></textarea>
+      </div>
+
+      <div class="confirm-state" id="confirmState" hidden>
+        <p>You're one step away. We'll continue your order on WhatsApp.</p>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-wide" data-track="order_form_submit">Continue On WhatsApp →</button>
+      <p class="form-footnote">No payment is taken here — you'll confirm your order and delivery with us directly on WhatsApp.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ 11. FAQ ============ -->
+<section class="section" id="faq">
+  <div class="wrap narrow">
+    <p class="section-kicker">Questions</p>
+    <h2>Before you order</h2>
+
+    <div class="accordion" id="accordion">
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>Will it work with iPhone?</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-panel">
+          <p>Most iPhones from recent years support tap-to-open NFC tags without any app. If a customer's phone doesn't support it or has NFC switched off, the printed QR code opens the same review page.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>What if a customer's phone doesn't support NFC?</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-panel">
+          <p>They scan the QR code printed on the same card with their camera app — it opens the same review page as the tap.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>Can I use it for my type of business?</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-panel">
+          <p>If your business has a Google Business Profile and benefits from customer reviews, the card works for you — restaurants, hotels, salons, barbers, clinics, retail, real estate and other service businesses.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>Do my customers need to download an app?</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-panel">
+          <p>No. Tapping or scanning opens the review page directly in their phone's browser.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>Can I change the review destination later?</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-panel">
+          <p>Yes. If you rebrand, move location, or your Google Business Profile changes, just message us — we update the card's destination from our side. You keep the same physical card; nothing needs reprogramming on your end and no replacement is required.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>Can I see how many people have tapped my card?</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-panel">
+          <p>Every card is connected to our tracking system, so tap activity is recorded on our side. Business-facing dashboard access is rolling out — ask us for the current status for your account.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>How do I order?</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-panel">
+          <p>Choose your quantity above, fill in your details, and you'll be taken to WhatsApp with your order details already filled in — just hit send and we'll take it from there.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>How long does delivery take?</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-panel">
+          <p id="deliveryFaqText">[INSERT DELIVERY INFORMATION]</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>Is the card reusable?</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-panel">
+          <p>Yes — it's a permanent fixture at your counter or reception, used by every customer who taps or scans it, not a one-time item.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12. SOCIAL PROOF ============ -->
+<section class="section section-alt" id="proof">
+  <div class="wrap">
+    <p class="section-kicker">From businesses using it</p>
+    <h2>Real feedback, added as it comes in.</h2>
+    <div class="proof-grid">
+      <div class="proof-card">
+        <p class="proof-quote">[REAL CUSTOMER TESTIMONIAL]</p>
+        <p class="proof-attribution">[REAL BUSINESS NAME]</p>
+      </div>
+      <div class="proof-card">
+        <p class="proof-quote">[REAL CUSTOMER TESTIMONIAL]</p>
+        <p class="proof-attribution">[REAL BUSINESS NAME]</p>
+      </div>
+      <div class="proof-card proof-card-photo">
+        <span>[REAL BUSINESS PHOTO]</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 13. GUARANTEE ============ -->
+<section class="section guarantee">
+  <div class="wrap narrow guarantee-inner">
+    <h2>Our guarantee</h2>
+    <p>[INSERT REAL GUARANTEE HERE — e.g. replacement policy, delivery guarantee, or return terms]</p>
+  </div>
+</section>
+
+<!-- ============ 13b. FUTURE ECOSYSTEM ============ -->
+<section class="section section-dark section-dark-alt" id="ecosystem">
+  <div class="wrap">
+    <p class="section-kicker section-kicker-dark">What's next</p>
+    <h2 class="dark-heading">We're starting with reviews. We're building a lot more.</h2>
+    <p class="section-lede dark-lede">The Google Review Tap is the first product on a platform built to run more than reviews — same card format, same reliability, different destination.</p>
+
+    <div class="ecosystem-grid">
+      <div class="ecosystem-item">
+        <span class="ecosystem-badge">Coming soon</span>
+        <h3 class="dark-heading">Smart digital Payment</h3>
+        <p class="dark-body">Tap to open a restaurant or hospitality payment details</p>
+      </div>
+      <div class="ecosystem-item">
+        <span class="ecosystem-badge">Coming soon</span>
+        <h3 class="dark-heading">Smart digital menus</h3>
+        <p class="dark-body">Tap to open a restaurant or hospitality menu — no printing, updated instantly.</p>
+      </div>
+      <div class="ecosystem-item">
+        <span class="ecosystem-badge">Coming soon</span>
+        <h3 class="dark-heading">Digital business cards</h3>
+        <p class="dark-body">Tap to instantly share contact details, socials and a digital identity.</p>
+      </div>
+      <div class="ecosystem-item">
+        <span class="ecosystem-badge">Coming soon</span>
+        <h3 class="dark-heading">Smart Wi-Fi</h3>
+        <p class="dark-body">A simpler, NFC-based way for guests to join your Wi-Fi.</p>
+      </div>
+      <div class="ecosystem-item">
+        <span class="ecosystem-badge">Coming soon</span>
+        <h3 class="dark-heading">Connected access</h3>
+        <p class="dark-body">Future NFC access and authentication products for your business.</p>
+      </div>
+      <div class="ecosystem-item">
+        <span class="ecosystem-badge">Coming soon</span>
+        <h3 class="dark-heading">Asset tracking</h3>
+        <p class="dark-body">NFC-enabled digital identities for equipment and physical assets.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 14. FINAL CTA ============ -->
+<section class="section final-cta">
+  <div class="wrap narrow final-cta-inner">
+    <h2>Make it easier for happy customers to review your business.</h2>
+    <p>Give your customers a simple way to find your review page and share their experience — one tap is all it takes.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary" data-scroll="#offer" data-track="final_primary_cta">Get My Review Card</button>
+      <a class="btn btn-outline btn-outline-dark" data-whatsapp data-track="final_whatsapp_click" href="#">Chat With Us On WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-name">Tap<span class="brand-accent">Review</span></span>
+      <p id="footerDelivery">[INSERT DELIVERY INFORMATION]</p>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>WhatsApp: <span id="footerWhatsapp">—</span></p>
+      <p>[INSERT CONTACT EMAIL]</p>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <p><a href="#">Privacy Policy</a></p>
+      <p><a href="#">Terms of Service</a></p>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>This product links to your existing Google Business review page and is not an official Google product.</p>
+  </div>
+</footer>
+
+<!-- ============ STICKY MOBILE CTA ============ -->
+<div class="sticky-cta" id="stickyCta">
+  <a href="#" data-whatsapp data-track="sticky_whatsapp_click">💬 Order on WhatsApp</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
