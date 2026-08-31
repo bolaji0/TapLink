@@ -38,6 +38,15 @@ const PRODUCT_CONFIG = {
       quantity: 5,
       price: 120000,
       unitNote: "Best value per card"
+    },
+    {
+      // Not a fixed-price package — a quote-request card. Clicking it skips
+      // the order form entirely and opens WhatsApp directly, since neither
+      // "how many" nor "what design" has a fixed price to show.
+      id: "custom",
+      name: "Bulk / Custom",
+      custom: true,
+      unitNote: "Large quantities or your own card design — get a quote"
     }
   ]
 };
@@ -105,9 +114,25 @@ function renderPackages(state) {
   PRODUCT_CONFIG.packages.forEach(pkg => {
     const card = document.createElement("button");
     card.type = "button";
-    card.className = "package";
+    card.className = pkg.custom ? "package package-custom" : "package";
     card.setAttribute("data-package-id", pkg.id);
     card.setAttribute("aria-pressed", "false");
+
+    if (pkg.custom) {
+      card.innerHTML = `
+        <span class="package-name">${pkg.name}</span>
+        <span class="package-price package-price-custom">Get a quote</span>
+        <span class="package-unit">${pkg.unitNote || ""}</span>
+      `;
+      card.addEventListener("click", () => {
+        trackEvent("whatsapp_click", { source: "custom_package_card" });
+        const message = `Hello, I'm interested in a bulk order or a custom card design for the ${PRODUCT_CONFIG.productName}. Please advise on options and pricing.`;
+        const url = `https://wa.me/${PRODUCT_CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`;
+        window.open(url, "_blank", "noopener");
+      });
+      container.appendChild(card);
+      return;
+    }
 
     const unitPrice = pkg.price / pkg.quantity;
     const savingsPct = baseUnit > 0 ? Math.round((1 - unitPrice / baseUnit) * 100) : 0;
@@ -154,6 +179,7 @@ function renderQuantityOptions() {
   if (!select) return;
   select.innerHTML = "";
   PRODUCT_CONFIG.packages.forEach(pkg => {
+    if (pkg.custom) return; // has its own direct-to-WhatsApp card, not part of this form
     const opt = document.createElement("option");
     opt.value = pkg.id;
     opt.textContent = `${pkg.name} — ${formatPrice(pkg.price)}`;
