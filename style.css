@@ -305,7 +305,6 @@ p { margin: 0; }
 .mock-card-stars i:nth-child(5) { animation-delay: 2.1s; }
 @keyframes starPop { to { opacity: 1; transform: scale(1); } }
 .mock-card-qr { width: 92px; height: 92px; padding: 6px; background: #fff; }
-/* .mock-card-qr img{width: 100%;} */
 .mock-card-tap {
   font-family: var(--font-mono);
   font-size: 0.72rem;
@@ -620,6 +619,9 @@ p { margin: 0; }
 .package-name { font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; margin-bottom: 6px; }
 .package-price { font-family: var(--font-mono); font-size: 1.3rem; font-weight: 600; color: var(--green-deep); }
 .package-unit { display: block; font-size: 0.78rem; color: var(--text-muted); margin-top: 4px; }
+.package-custom { border-style: dashed; border-color: var(--gold-deep); background: transparent; }
+.package-custom:hover { border-color: var(--gold-deep); background: rgba(232,163,61,0.06); }
+.package-price-custom { color: var(--gold-deep); font-size: 1.05rem; }
 
 .order-summary {
   margin-top: 30px;
